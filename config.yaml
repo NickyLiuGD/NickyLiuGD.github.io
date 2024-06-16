@@ -1,23 +1,24 @@
 
 proxies:
-  - name: "example-vless"
+  - name: "🇺🇸|US|美国|@wxgqlfx|237"
     type: vless
-    server: example.com
-    port: 443
-    uuid: your-uuid
-    cipher: auto
+    server: 104.168.107.230
+    port: 8443
+    uuid: b7a3a5b8-fa6d-4339-a0e9-2bff4fe15f1f
+    cipher: none
     tls: true
-    network: ws
-    ws-opts:
-      path: /path
-      headers:
-        Host: example.com
+    network: tcp
+    flow: xtls-rprx-vision
+    servername: aws.amazon.com
+    reality-opts:
+      public-key: QQHxQK7ocGHvaCmqtW3QapnKiBVd4ZjjM3zhCGVMPS4
+      short-id: db68e802226b21cd
 
 proxy-groups:
   - name: "Proxy"
     type: select
     proxies:
-      - "example-vless"
+      - "🇺🇸|US|美国|@wxgqlfx|237"
 
 rules:
   - GEOIP, cn, DIRECT
