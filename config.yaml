@@ -221,8 +221,7 @@ config:
     tls: false
     type: vless
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  - &id001
-    cipher: none
+  - cipher: none
     flow: ''
     name: "\U0001F1E9\U0001F1EA|DE|\u5FB7\u56FD|@wxgqlfx|18"
     network: ws
@@ -263,5 +262,5 @@ config:
   - GEOIP, cn, DIRECT
   - MATCH,FINAL,auto
   - MATCH,LoadBalancing
-node_info: *id001
+node_info: zdy000.kpcloud.eu.org
 proxies: "\U0001F1E9\U0001F1EA|DE|\u5FB7\u56FD|@wxgqlfx|18"
