@@ -260,8 +260,6 @@ proxy-groups:
 - interval: 300
   name: load-balance
   proxies: *id001
-  strategy: consistentHash
-  type: load-balance
   url: http://www.gstatic.com/generate_204
 rules:
 - GEOIP, cn, DIRECT
