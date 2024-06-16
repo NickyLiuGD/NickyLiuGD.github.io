@@ -265,3 +265,4 @@ proxy-groups:
 rules:
 - GEOIP, cn, DIRECT
 - MATCH,FINAL,auto
+- MATCH,LoadBalancing
