@@ -263,5 +263,5 @@ config:
   - GEOIP, cn, DIRECT
   - MATCH,FINAL,auto
   - MATCH,LoadBalancing
-node: *id001
+node_info: *id001
 proxies: "\U0001F1E9\U0001F1EA|DE|\u5FB7\u56FD|@wxgqlfx|18"
