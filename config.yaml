@@ -238,7 +238,7 @@ config:
   proxy-groups:
   - interval: 300
     name: Auto
-    proxies: &id002
+    proxies:
     - "\U0001F1ED\U0001F1F0|HK|\u9999\u6E2F|@wxgqlfx|1"
     - "\U0001F1ED\U0001F1F0|HK|\u9999\u6E2F|@wxgqlfx|2"
     - "\U0001F1ED\U0001F1F0|HK|\u9999\u6E2F|@wxgqlfx|3"
@@ -264,4 +264,4 @@ config:
   - MATCH,FINAL,auto
   - MATCH,LoadBalancing
 node: *id001
-proxies: *id002
+proxies: "\U0001F1E9\U0001F1EA|DE|\u5FB7\u56FD|@wxgqlfx|18"
