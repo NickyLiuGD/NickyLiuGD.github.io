@@ -1,7 +1,8 @@
 proxies:
 - cipher: none
   flow: ''
-  name: "\U0001F1EF\U0001F1F5|JP|\u65E5\u672C|@wxgqlfx|352"
+  name: "\U0001F1EF\U0001F1F5|JP|\u65E5\u672C|@wxgqlfx|352 vless://6f995056-7802-4a1d-bff7-61678e626c3f@13.75.34.176:443?path=/&security=tls&encryption=none&type=ws&sni=dee33.azurewebsites.net#\U0001F1ED\
+    \U0001F1F0|HK|\u9999\u6E2F|@wxgqlfx|354"
   network: ws
   port: 34307
   reality-opts:
@@ -12,11 +13,26 @@ proxies:
   tls: false
   type: vless
   uuid: c82f8880-bdd8-4a35-b8e7-ad5aa880f7d0
+- cipher: none
+  flow: ''
+  name: "\U0001F1EF\U0001F1F5|JP|\u65E5\u672C|@wxgqlfx|355"
+  network: ws
+  port: 34237
+  reality-opts:
+    public-key: ''
+    short-id: ''
+  server: 150.66.24.104
+  servername: cfed.tgzdyz2.top
+  tls: false
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
 proxy-groups:
 - interval: 300
   name: Auto
   proxies:
-  - "\U0001F1EF\U0001F1F5|JP|\u65E5\u672C|@wxgqlfx|352"
+  - "\U0001F1EF\U0001F1F5|JP|\u65E5\u672C|@wxgqlfx|352 vless://6f995056-7802-4a1d-bff7-61678e626c3f@13.75.34.176:443?path=/&security=tls&encryption=none&type=ws&sni=dee33.azurewebsites.net#\U0001F1ED\
+    \U0001F1F0|HK|\u9999\u6E2F|@wxgqlfx|354"
+  - "\U0001F1EF\U0001F1F5|JP|\u65E5\u672C|@wxgqlfx|355"
   type: url-test
   url: http://www.gstatic.com/generate_204
 rules:
