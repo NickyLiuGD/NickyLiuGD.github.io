@@ -262,5 +262,8 @@ config:
   - GEOIP, cn, DIRECT
   - MATCH,FINAL,auto
   - MATCH,LoadBalancing
-node_info: zdy000.kpcloud.eu.org
+node_info: "{'name': '\U0001F1E9\U0001F1EA|DE|\u5FB7\u56FD|@wxgqlfx|18', 'type': 'vless',\
+  \ 'server': '176.126.114.97', 'port': 443, 'uuid': 'a13df940-020c-465f-bc89-ee5279b5cd6a',\
+  \ 'cipher': 'none', 'tls': False, 'network': 'ws', 'flow': '', 'servername': 'zdy000.kpcloud.eu.org',\
+  \ 'reality-opts': {'public-key': '', 'short-id': ''}}"
 proxies: "\U0001F1E9\U0001F1EA|DE|\u5FB7\u56FD|@wxgqlfx|18"
