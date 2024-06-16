@@ -221,7 +221,7 @@ config:
     tls: false
     type: vless
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  - &id002
+  - &id001
     cipher: none
     flow: ''
     name: "\U0001F1E9\U0001F1EA|DE|\u5FB7\u56FD|@wxgqlfx|18"
@@ -238,7 +238,7 @@ config:
   proxy-groups:
   - interval: 300
     name: Auto
-    proxies: &id001
+    proxies: &id002
     - "\U0001F1ED\U0001F1F0|HK|\u9999\u6E2F|@wxgqlfx|1"
     - "\U0001F1ED\U0001F1F0|HK|\u9999\u6E2F|@wxgqlfx|2"
     - "\U0001F1ED\U0001F1F0|HK|\u9999\u6E2F|@wxgqlfx|3"
@@ -259,14 +259,9 @@ config:
     - "\U0001F1E9\U0001F1EA|DE|\u5FB7\u56FD|@wxgqlfx|18"
     type: url-test
     url: http://www.gstatic.com/generate_204
-  - interval: 300
-    name: load-balance
-    proxies: *id001
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
   rules:
   - GEOIP, cn, DIRECT
   - MATCH,FINAL,auto
   - MATCH,LoadBalancing
-node: *id002
-proxies: *id001
+node: *id001
+proxies: *id002
